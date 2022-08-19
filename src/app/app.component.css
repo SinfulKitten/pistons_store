@@ -1,0 +1,61 @@
+.logo-smoke {
+  position: absolute;
+  content: url("../assets/pics/car-smoke.png");
+  height: 100px;
+  width: 100px;
+  z-index: 0;
+}
+.logo-tires {
+  position: absolute;
+  content: url("../assets/pics/car-tyres.png");
+  height: 100px;
+  width: 100px;
+  margin-top: 0;
+  z-index: -0;
+}
+.logo-body {
+  content: url("../assets/pics/car-body.png");
+  height: 100px;
+  width: 100px;
+  left: 100px;
+  z-index: -0;
+  animation: MoveUpDown 1s linear infinite;
+}
+.logo-body:hover {
+  content: url("../assets/pics/car-body-unhovered.png");
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+.header-menu {
+  display: flex;
+}
+.header-menu-sign-in {
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  height: 80px;
+  background-color: plum;
+  font-size: 14px;
+  display: flex;
+  color: black;
+  padding-right: 8px;
+}
+.header-menu-top-centre {
+  font-size-adjust: 10px;
+  color: black;
+}
+.header-menu-bottom-centre {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header-menu > div {
+  margin: 8px;
+}
